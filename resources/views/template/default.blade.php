@@ -1,3 +1,13 @@
+@php
+function get_asset($data){
+    if(config('app.env') === 'local'){
+        return asset($data);
+    }else{
+        return secure_asset($data);
+    }
+}
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -7,17 +17,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Template</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="{{ secure_asset('css/default.css') }}" />
+        <link rel="stylesheet" href="{{ get_asset('css/default.css') }}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/css/lightgallery.css" />
 
-        <link rel="stylesheet" href="{{ secure_asset('css/animate.css') }}" />
+        <link rel="stylesheet" href="{{ get_asset('css/animate.css') }}" />
 
         <style>
             @font-face {
                 font-family: 'GreatVibes';
-                src: url({{ secure_asset('font/GreatVibes-Regular.ttf') }});
+                src: url({{ get_asset('font/GreatVibes-Regular.ttf') }});
             }
         </style>
     </head>
@@ -30,7 +40,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: url('{{ secure_asset('images/edward-cisneros-446789-unsplash.jpg') }}') no-repeat;
+                background: url('{{ get_asset('images/edward-cisneros-446789-unsplash.jpg') }}') no-repeat;
                 background-size: cover;
                 background-position:top center;"></div>
                 <div style="
@@ -394,8 +404,8 @@
         {{-- <script src="https://wowjs.uk/dist/wow.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/js/lightgallery-all.min.js"></script>
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.js"></script> --}}
-        <script src="{{ secure_asset('js/parallax.min.js') }}"></script>
-        <script src="{{ secure_asset('js/wow.js') }}"></script>
+        <script src="{{ get_asset('js/parallax.min.js') }}"></script>
+        <script src="{{ get_asset('js/wow.js') }}"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
