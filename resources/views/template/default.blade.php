@@ -31,7 +31,7 @@ function get_asset($data){
             }
         </style>
     </head>
-    <body>
+    <body style="overflow-x: hidden">
         <div class="vw-100">
             <div class="vw-100 vh-100">
                 <div class="wow pulse" style="
@@ -53,7 +53,7 @@ function get_asset($data){
                 "></div>
                 <div class="container h-100">
                     <div class="row row h-100 d-flex align-items-center">
-                        <div class="col-md-5 col-lg-5 col-sm-5">
+                        <div class="col hidden-md-up text-center">
                             <div class="wow slideInLeft">
                                 <h3>Undangan Pernikahan</h3>
                             </div>
@@ -61,7 +61,24 @@ function get_asset($data){
                                 <h1 class="mt-5" style="font-family: 'GreatVibes'; font-size: 60px;" class="">Hasna & Fazri</h1>
                             </div>
                             <p class="mt-5 mb-5">
-                                Kepada Yth. <div class="wow slideInRight"></div>
+                                Kepada Yth. <span style="font-weight: bold">Testing</span>
+                            </p>
+                            <p>
+                                Kami mengundang Bapak/Ibu/Saudara/i untuk Hadir di Pernikahan Kami.
+                            </p>
+                            <div>
+                                <a href="#brideroom"><button class="btn btn-open" id="open">Buka Undangan</button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 hidden-md-down">
+                            <div class="wow slideInLeft">
+                                <h3>Undangan Pernikahan</h3>
+                            </div>
+                            <div class="wow slideInRight">
+                                <h1 class="mt-5" style="font-family: 'GreatVibes'; font-size: 60px;" class="">Hasna & Fazri</h1>
+                            </div>
+                            <p class="mb-5 mt-5">
+                                Kepada Yth. <span style="font-weight: bold">Testing</span>
                             </p>
                             <p>
                                 Kami mengundang Bapak/Ibu/Saudara/i untuk Hadir di Pernikahan Kami.
@@ -89,7 +106,7 @@ function get_asset($data){
                                         </p>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
-                                                <img src="https://penantian.com/wp-content/uploads/2020/11/BIMG_20201110_191734_228.jpg" class="rounded wow bounceInLeft" style="max-width: 100%">
+                                                <img src="https://penantian.com/wp-content/uploads/2020/11/BIMG_20201110_191734_228.jpg" class="rounded wow bounceInLeft mt-3 mb-3" style="max-width: 100%">
                                             </div>
                                             <div class="col d-flex justify-content-center align-items-center">
                                                 <div class="wow slideInRight">
@@ -123,7 +140,7 @@ function get_asset($data){
                                             <div class="w-100"></div>
 
                                             <div class="col-md-6 col-sm-12">
-                                                <img src="https://penantian.com/wp-content/uploads/2020/11/BIMG_20201110_191734_228.jpg" class="rounded wow bounceInLeft" style="max-width: 100%">
+                                                <img src="https://penantian.com/wp-content/uploads/2020/11/BIMG_20201110_191734_228.jpg" class="rounded wow bounceInLeft mt-3 mb-3" style="max-width: 100%">
                                             </div>
                                             <div class="col d-flex justify-content-center align-items-center">
                                                 <div class="wow slideInRight">
@@ -180,7 +197,7 @@ function get_asset($data){
                     <div class="w-100 mt-5 mb-5">
                         <div class="row">
                             <div class="col wow slideInLeft">
-                                <div class="card">
+                                <div class="card mb-5">
                                     <div class="card-body p-5">
                                         <div class="text-center">
                                             <h1 style="font-family: 'GreatVibes'; font-size: 55px">Akad Nikah</h1>
@@ -210,7 +227,7 @@ function get_asset($data){
                                 </div>
                             </div>
                             <div class="col wow slideInRight">
-                                <div class="card">
+                                <div class="card mb-5">
                                     <div class="card-body p-5">
                                         <div class="text-center">
                                             <h1 style="font-family: 'GreatVibes'; font-size: 55px">Resepsi</h1>
