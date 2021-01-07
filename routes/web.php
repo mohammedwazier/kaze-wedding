@@ -21,3 +21,4 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/2', 'TemplateController@dua');
 Route::get('/default', 'TemplateController@default');
 Route::get('/default2', 'TemplateController@default2');
+Route::get('/default3', 'TemplateController@default3');

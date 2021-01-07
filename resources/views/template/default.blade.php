@@ -358,51 +358,37 @@ function get_asset($data){
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                             <div class="col-4 mt-3 mb-3"
                                             data-src="https://sachinchoolur.github.io/lightGallery/static/img/1-1600.jpg"
                                             >
-                                                <a href="">
-                                                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
-                                                </a>
+                                                <img class="img-responsive" src="https://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" style="max-width: 100%">
                                             </div>
                                         </div>
                                     </div>
@@ -421,7 +407,7 @@ function get_asset($data){
         {{-- <script src="https://wowjs.uk/dist/wow.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/js/lightgallery-all.min.js"></script>
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.js"></script> --}}
-        <script src="{{ get_asset('js/parallax.min.js') }}"></script>
+        {{-- <script src="{{ get_asset('js/parallax.min.js') }}"></script> --}}
         <script src="{{ get_asset('js/wow.js') }}"></script>
 
         <script type="text/javascript">
@@ -431,26 +417,26 @@ function get_asset($data){
                     pager: true
                 });
 
-                $("a").on('click', function(event) {
+                // $("a").on('click', function(event) {
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+                // // Make sure this.hash has a value before overriding default behavior
+                //     if (this.hash !== "") {
+                //         // Prevent default anchor click behavior
+                //         event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+                //         // Store hash
+                //         var hash = this.hash;
 
-                    console.log(hash)
+                //         console.log(hash)
 
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 500, function(){
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-                });
+                //         $('html, body').animate({
+                //             scrollTop: $(hash).offset().top
+                //         }, 500, function(){
+                //             // Add hash (#) to URL when done scrolling (default click behavior)
+                //             window.location.hash = hash;
+                //         });
+                //     } // End if
+                // });
             });
         </script>
     </body>
